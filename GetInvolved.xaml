@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HACKATHON.GetInvolved"
+             Title="Get Involved">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Get Involved"
+               FontSize="32"
+               HorizontalOptions="Center" />
+
+            <Label Text="Join us in the fight against food insecurity. Here are ways you can help:" />
+
+            <Button Text="Volunteer" Clicked="OnVolunteerClicked" />
+            <Button Text="Fundraise" Clicked="OnFundraiseClicked" />
+            <Button Text="Advocate" Clicked="Button_Clicked" />
+
+            <Button Text="Back" Clicked="OnBackClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HACKATHON.AboutFood"
+             Title="ABOUT FOOD INSECURITY">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="About Food Insecurity"
+               FontSize="32"
+               HorizontalOptions="Center" />
+
+            <Label Text="Food insecurity refers to the lack of reliable access to a sufficient quantity of affordable food."
+               FontSize="20" />
+
+            <Label Text="Statistics"
+               FontSize="24" />
+            <Label Text="In Malaysia, approximately 10% of the population experiences food insecurity." />
+
+            <Label Text="Impact"
+               FontSize="24" />
+            <Label Text="Food insecurity can lead to malnutrition, health issues, and increased poverty levels." />
+
+            <Button Text="Get Involved" Clicked="OnGetInvolvedClicked" />
+            <Button Text="Back" Clicked="OnBackClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

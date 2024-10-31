@@ -1,0 +1,21 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HACKATHON.AdminLogin">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Admin Login"
+                   FontSize="32"
+                   TextColor="Yellow"
+                   HorizontalOptions="Center" />
+
+            <!-- Username Entry -->
+            <Entry x:Name="UsernameEntry" Placeholder="Username" TextColor="Black" BackgroundColor="White" />
+
+            <!-- Password Entry -->
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextColor="Black" BackgroundColor="White" />
+          
+            <Button Text="Login" BackgroundColor="Yellow" TextColor="Black" Clicked="OnLoginClicked" />
+            <Button Text="Back" BackgroundColor="Red" TextColor="White" Clicked="OnBackClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

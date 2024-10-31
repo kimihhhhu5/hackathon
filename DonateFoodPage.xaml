@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HACKATHON.DonateFoodPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Donate Food"
+                   FontSize="32"
+                   HorizontalOptions="Center" />
+
+            <!-- Donor Name Entry -->
+            <Entry x:Name="NameEntry" Placeholder="Donor's Name" />
+            <Entry x:Name="DetailsEntry" Placeholder="Details" />
+
+            <!-- Organization Type Picker -->
+            <Picker x:Name="OrganizationTypePicker" Title="Organization Type">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Personal</x:String>
+                        <x:String>Government</x:String>
+                        <x:String>NGO</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <!-- RM Entry -->
+            <Entry x:Name="AmountEntry" Placeholder="RM" />
+
+            <!-- Type of Donation Picker -->
+            <Picker x:Name="DonationTypePicker" Title="Type of Donation">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Food</x:String>
+                        <x:String>Clothing</x:String>
+                        <x:String>Other</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <!-- Address Entry -->
+            <Entry x:Name="AddressEntry" Placeholder="Pickup/Drop-off Address" />
+
+            <!-- Contact Information Entry -->
+            <Entry x:Name="ContactInfoEntry" Placeholder="Contact Information" />
+            <Entry Text="{Binding SubmissionDate, StringFormat='Submitted on: {0:MM/dd/yyyy}'}" FontSize="Small" x:Name=" SubmissionDateLabel" Placeholder="MM/dd/yyyy"/>
+            <!-- Buttons for Submit and Back -->
+            <Button Text="Submit Donation" Clicked="OnSubmitDonationClicked" />
+            <Button Text="Back" Clicked="OnBackClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

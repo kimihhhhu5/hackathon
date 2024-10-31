@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HACKATHON.MainPage">
+
+    <StackLayout Padding="20">
+        <!-- Header -->
+        <Label Text="Food Donation Hub"
+               FontSize="32"
+               TextColor="Yellow"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+        <!-- Menu Options -->
+        <Button Text="Donate Food"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnDonateFoodClicked" />
+        <Button Text="Find Food"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnFindFoodClicked" />
+        <Button Text="Food Bank Map"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnFoodBankMapClicked" />
+        <Button Text="About Food Insecurity"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnAboutFoodInsecurityClicked" />
+
+        <!-- Admin Login -->
+        <Button Text="Admin Login"
+                BackgroundColor="Red"
+                TextColor="White"
+                Clicked="Button_Clicked" />
+
+        <!-- Footer -->
+        <Label Text="Quick Links"
+               FontSize="20"
+               TextColor="Yellow"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+    </StackLayout>
+</ContentPage>

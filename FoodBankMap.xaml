@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HACKATHON.FoodBankMap">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Food Bank Map"
+               FontSize="32"
+               HorizontalOptions="Center" />
+
+            <Label Text="Interactive map showing nearby food banks will be here."
+               HorizontalOptions="Center" />
+
+            <Button Text="Back" Clicked="OnBackClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
